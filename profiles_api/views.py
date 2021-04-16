@@ -64,7 +64,7 @@ class HelloViewSet(viewsets.ViewSet):
 
 
     def create(self, request):
-        """Create a new hello message"""
+        """Create a new hello message."""
         serializer = self.serializer_class(data=request.data)
 
         if serializer.is_valid():
